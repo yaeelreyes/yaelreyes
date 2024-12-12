@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body{
+  color: #4d3b9d;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(95, 157, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ffffff;
+
+}
+
+.home{
+    height: 100vh;
+    background: url('boys.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    text-align:justify;
+    background-color: #13093d;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1 {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.2;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #34abda;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #ffffff;
+}
+
+
+
+.home-scie {
+  position: absolute;
+  bottom: 40px;
+  width: 200px;
+  display: flex;
+  justify-content:safe;
+}
+
+.home-scie a{
+  position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40;
+    background: transparent;
+    border: 2px solid #00abee;
+    border-radius: 40%;
+    font-size: 20px;
+    color: #91b6c5;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-scie a:hover {        
+      color: #081b29;
+
+
+}
+
+
+.home-scie a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30;
+    height: 100%;
+    background: #0cb0f1;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-scie a:hover::before {
+    width: 100%;
+}
+.pic{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+
+}
+.pic img{
+    position: absolute;
+    height: 100%;
+    left: 40%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.pic:hover .yael{
+    left: 55%;
+
+}
+
+    

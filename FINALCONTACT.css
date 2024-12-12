@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body{
+    background-color: #13093d;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(95, 157, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ffffff;
+
+}
+/* General styles for the contact container */
+.contact-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Floating shadow effect */
+    text-align: center;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-20px); /* Floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10%;
+}
+
+/* Hover effect for floating container */
+.contact-container:hover {
+    transform: translateY(-30px); /* Lift up on hover */
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+/* Styling for contact details */
+.contact-details p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.contact-details p i {
+    margin-right: 15px;
+    font-size: 1.4em;
+    color: #3498db;
+}
+
+.contact-details p:hover {
+    color: #e74c3c; /* Change text color on hover */
+}
+
+/* Styling for the links */
+.contact-details a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Button styling */
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Floating button shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-5px); /* Floating button effect */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Focus state for button */
+.contact-button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        padding: 25px 20px;
+    }
+    .contact-button {
+        width: 100%;
+        font-size: 1em;
+        padding: 12px 0;
+    }
+}

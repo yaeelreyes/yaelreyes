@@ -1,0 +1,121 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color:   #13093d; /* Dark background */
+    color: #fff;
+    padding-top: 80px; /* To prevent content being hidden behind the fixed header */
+    height: 100%;
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(95, 157, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ffffff;
+}
+
+/* Skills and Expertise Section */
+#skills-expertise {
+    background-color: #13093d;
+    padding: 40px 0;
+    color: #333;
+}
+
+#skills-expertise h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff; /* Pink color for heading */
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.skill-category {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%; /* 3 columns on larger screens */
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Semicolon added */
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+.skill-category ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.skill-category:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1024px) {
+    .skill-category {
+        width: 45%; /* 2 columns on medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill-category {
+        width: 100%; /* 1 column on small screens */
+    }
+}
